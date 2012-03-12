@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.openscada.tauri"
+      label="openSCADA Tau&apos;ri Feature"
+      version="0.18.0.qualifier"
+      provider-name="TH4 SYSTEMS GmbH">
+
+   <description>
+      The openSCADA Examples Project
+   </description>
+
+   <copyright url="http://opensource.org/licenses/lgpl-3.0.html">
+      %copyright
+   </copyright>
+
+   <license url="http://opensource.org/licenses/lgpl-3.0.html">
+      %license
+   </license>
+
+   <includes
+         id="org.openscada.sample.arduino1"
+         version="0.0.0"/>
+
+</feature>

@@ -97,6 +97,8 @@
   <target name="postSetup">
     <antcall target="getBaseComponents" />
   	
+  	<openscada.builder.copyFeature id="org.openscada.tauri"/>
+  		
   	<openscada.builder.copyFeature id="org.openscada.sample.arduino1"/>
   	
   	<openscada.builder.copyPlugin id="org.openscada.vi.sample1"/>

@@ -20,7 +20,7 @@
           target: default              
          ================================= -->
     <target name="default" depends="clean,openscada.build.profile.setup">
-    	<openscada.bundleBuild builder="builder.sample1"/>
+    	<openscada.bundleBuild builder="builder"/>
     </target>
 	
 	<!-- ================================= 
