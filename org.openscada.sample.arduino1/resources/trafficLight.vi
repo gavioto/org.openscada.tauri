@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" onInit="controller.registerItem ( &quot;A&quot;, controller.getProperty ( &quot;item&quot; ), controller.getProperty(&quot;connection&quot;));" onUpdate="updateValue ( &quot;A&quot;);">
+  <root xsi:type="visualInterface:FigureContainer" name="container" border="1" opaque="true">
+    <content xsi:type="visualInterface:GridContainer">
+      <children>
+        <element xsi:type="visualInterface:Ellipse" name="red" foregroundColor="#000000" backgroundColor="#FF0000" border="">
+          <size width="50.0" height="50.0"/>
+        </element>
+      </children>
+      <children>
+        <element xsi:type="visualInterface:Ellipse" name="yellow" foregroundColor="#000000" backgroundColor="#FFFF00" border="">
+          <size width="50.0" height="50.0"/>
+        </element>
+      </children>
+      <children>
+        <element xsi:type="visualInterface:Ellipse" name="green" foregroundColor="#000000" backgroundColor="#00FF00" border="">
+          <size width="50.0" height="50.0"/>
+        </element>
+      </children>
+      <children>
+        <element xsi:type="visualInterface:Text" name="value"/>
+      </children>
+    </content>
+  </root>
+  <scriptModules>platform:/plugin/org.openscada.sample.arduino1/resources/trafficLight.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/detailDialog.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/colors.js</scriptModules>
+</visualInterface:Symbol>

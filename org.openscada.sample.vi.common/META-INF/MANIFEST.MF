@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Common VI Components
+Bundle-SymbolicName: org.openscada.sample.vi.common
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: TH4 SYSTEMS GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" onInit="" onUpdate="">
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" name="" uri="platform:/plugin/org.openscada.sample.vi.common/resources/symbols/textValue.vi">
+        <properties key="item" value="arduino1.data.temperature"/>
+      </element>
+      <position x="100.0" y="100.0"/>
+      <dimension width="100.0" height="30.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" name="" uri="platform:/plugin/org.openscada.sample.vi.common/resources/symbols/textValue.vi">
+        <properties key="item" value="arduino1.data.min"/>
+      </element>
+      <position x="100.0" y="140.0"/>
+      <dimension width="100.0" height="30.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" name="" uri="platform:/plugin/org.openscada.sample.vi.common/resources/symbols/textValue.vi">
+        <properties key="item" value="arduino1.data.max"/>
+      </element>
+      <position x="100.0" y="180.0"/>
+      <dimension width="100.0" height="30.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" text="Temperatur:"/>
+      <position x="10.0" y="105.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" text="Min:"/>
+      <position x="10.0" y="145.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" text="Max:"/>
+      <position x="10.0" y="185.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.arduino1/resources/trafficLight.vi">
+        <properties key="item" value="arduino1.data.state"/>
+      </element>
+      <position x="300.0" y="100.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.vi.common/resources/symbols/commandButton.vi">
+        <properties key="label" value="Stop"/>
+        <properties key="item" value="arduino1.data.stop"/>
+        <properties key="value" value="BOOLEAN#true"/>
+      </element>
+      <position x="100.0" y="220.0"/>
+      <dimension width="100.0" height="30.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.vi.common/resources/symbols/commandButton.vi">
+        <properties key="label" value="Start"/>
+        <properties key="item" value="arduino1.data.stop"/>
+        <properties key="value" value="BOOLEAN#false"/>
+      </element>
+      <position x="100.0" y="260.0"/>
+      <dimension width="100.0" height="30.0"/>
+    </children>
+  </root>
+  <properties key="connection" value="connection.main"/>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/detailDialog.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/colors.js</scriptModules>
+  <designSize width="480.0" height="640.0"/>
+</visualInterface:Symbol>
