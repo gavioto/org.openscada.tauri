@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface">
+  <root xsi:type="visualInterface:GridContainer" columns="4">
+    <children>
+      <element xsi:type="visualInterface:Rectangle" border="1">
+        <size width="100.0" height="100.0"/>
+      </element>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" border="5">
+        <size width="100.0" height="100.0"/>
+      </element>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" border="10">
+        <size width="100.0" height="100.0"/>
+      </element>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" border="" lineWidth="0.0">
+        <size width="100.0" height="100.0"/>
+      </element>
+    </children>
+    <children horizontalAlignment="FILL" spanCols="2">
+      <element xsi:type="visualInterface:FigureContainer" border="GROUP:Group Name">
+        <content xsi:type="visualInterface:Text" text="Hello World!"/>
+      </element>
+    </children>
+    <children horizontalAlignment="FILL" spanCols="2">
+      <element xsi:type="visualInterface:FigureContainer" border="TITLE:Title Name">
+        <content xsi:type="visualInterface:Text" text="Hello World!"/>
+      </element>
+    </children>
+  </root>
+</visualInterface:Symbol>

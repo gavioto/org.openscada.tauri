@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface">
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="#000" backgroundColor="#FFFF00|#FF0000">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="10.0" y="10.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="#000" backgroundColor="#FF0000|#FFFF00">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="120.0" y="10.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="#000" backgroundColor="|#FF0000">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="230.0" y="10.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="#000" backgroundColor="#FF0000|">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="340.0" y="10.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="#FFFF00|#FF0000" backgroundColor="">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="10.0" y="120.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="#FF0000|#FFFF00" backgroundColor="">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="120.0" y="120.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="|#FF0000" backgroundColor="">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="230.0" y="120.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="#FF0000|" backgroundColor="">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="340.0" y="120.0"/>
+    </children>
+  </root>
+</visualInterface:Symbol>

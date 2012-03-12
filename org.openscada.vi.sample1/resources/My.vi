@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" onInit="try {&#xA;&#x9;viewManager;&#xA;&#x9;var link = controller.getElement ( &quot;link&quot; );&#xA;&#x9;link.setVisible ( true );&#xA;}&#xA;catch ( e )&#xA;{}" onUpdate="var label = controller.getElement(&quot;label&quot;);&#xA;label.setText ( &quot;Data: &quot; + data.getSummary() );">
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:Rectangle" foregroundColor="" backgroundColor="#FF0000">
+        <size width="100.0" height="100.0"/>
+      </element>
+      <position x="10.0" y="10.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" text="Hello World"/>
+      <position x="200.0" y="200.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" name="label" text="Summary" labelAlignment="LEFT" textAlignment="BOTTOM"/>
+      <dimension width="1000.0" height="500.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Line">
+        <points x="10.0" y="10.0"/>
+        <points x="200.0" y="200.0"/>
+        <points x="100.0" y="300.0"/>
+      </element>
+      <position x="300.0" y="100.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Line">
+        <points y="10.0"/>
+        <points x="10.0" y="20.0"/>
+        <points y="30.0"/>
+      </element>
+      <position x="50.0" y="50.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.vi.sample1/resources/Symbol1.vi" zoom="0.5"/>
+      <position x="400.0" y="100.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.vi.sample1/resources/Symbol1.vi"/>
+      <position x="400.0" y="200.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.vi.sample1/resources/Symbol1.vi" zoom="2.0"/>
+      <position x="400.0" y="300.0"/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" name="link" backgroundColor="" onClick="viewManager.showView ( &quot;view2&quot; );" cursor="//@cursors" visible="false" text="Go forward"/>
+      <position y="600.0"/>
+    </children>
+  </root>
+  <properties key="key" value="value"/>
+  <properties key="color.invalid" value="#FF00FF"/>
+  <cursors xsi:type="visualInterface:SystemCursor" type="HAND"/>
+</visualInterface:Symbol>

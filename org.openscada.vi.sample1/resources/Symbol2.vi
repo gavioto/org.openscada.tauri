@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" onInit="var element = controller.getElement  (&quot;text&quot;);&#xA;element.setText ( &quot;Foo Bar: &quot; + controller.getProperty(&quot;key&quot;) + &#xA;&quot; - &quot; + controller.getProperty(&quot;local&quot;) +&#xA;&quot; - &quot; + controller.getProperty(&quot;localScript&quot;)&#xA;);&#xA;">
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:Rectangle" border="4">
+        <size width="100.0" height="30.0"/>
+      </element>
+      <position/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" name="text" foregroundColor="" backgroundColor="" text="Symbol 2"/>
+      <position/>
+    </children>
+  </root>
+</visualInterface:Symbol>

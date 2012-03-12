@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.openscada.core.ui.connection.provider.connectionInstance">
+      <connectionInstance
+            autoReconnect="10000"
+            servicePid="connection.test"
+            uri="da:net://localhost:1203">
+      </connectionInstance>
+   </extension>
+
+</plugin>

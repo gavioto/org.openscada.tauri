@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" onInit="controller.registerItem ( &quot;A&quot;, &quot;memory-cell-0&quot;, &quot;connection.test&quot; );" onUpdate="updateText ( &quot;A&quot;, &quot;sym1&quot;, &quot;rect&quot; );">
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:Rectangle" name="rect" backgroundColor="#AAAAAA">
+        <size width="100.0" height="30.0"/>
+      </element>
+      <position/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" name="sym1" foregroundColor="" backgroundColor="" text="Symbol 1"/>
+      <position/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.vi.sample1/resources/Symbol2.vi" onCreateProperties="properties.put(&quot;localScript&quot;,&quot;Lokal Script&quot;);">
+        <properties key="local" value="Lokal"/>
+      </element>
+      <position x="100.0"/>
+    </children>
+  </root>
+  <scriptModules>platform:/plugin/org.openscada.vi.sample1/resources/update.js</scriptModules>
+</visualInterface:Symbol>

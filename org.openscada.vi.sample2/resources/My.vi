@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface">
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:Text" text="Hello World"/>
+      <position/>
+    </children>
+    <children>
+      <element xsi:type="visualInterface:Text" onClick="viewManager.showView ( &quot;view1&quot; );" onDoubleClick="" cursor="//@cursors" text="Go Back"/>
+      <position y="50.0"/>
+    </children>
+  </root>
+  <cursors xsi:type="visualInterface:SystemCursor" type="HAND"/>
+</visualInterface:Symbol>
