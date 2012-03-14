@@ -21,6 +21,10 @@
          id="org.openscada.sample.arduino1"
          version="0.0.0"/>
 
+   <requires>
+      <import plugin="org.openscada.core.ui.connection.provider"/>
+   </requires>
+
    <plugin
          id="org.openscada.vi.sample1"
          download-size="0"
