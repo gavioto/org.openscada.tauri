@@ -20,6 +20,9 @@
             name="Borders"
             uri="platform:/plugin/org.openscada.vi.sample1/resources/Border.vi">
       </viewInstance>
+      <customerLogo
+            resource="resources/customerLogo.png">
+      </customerLogo>
    </extension>
    <extension
          point="org.openscada.core.ui.connection.login.context">
