@@ -7,7 +7,8 @@
             defaultInstance="true"
             id="main"
             name="Main"
-            resource="resources/main.vi">
+            resource="resources/main.vi"
+            zooming="true">
       </viewInstance>
       <viewInstance
             id="sample1.blinking"
