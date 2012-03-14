@@ -32,6 +32,18 @@
          <connection
                autoReconnectDelay="10000"
                servicePid="connection.main"
+               uri="da:net://scadahost:1202">
+         </connection>
+         <factory
+               class="org.openscada.core.ui.connection.login.factory.ConnectionLoginFactory">
+         </factory>
+      </context>
+      <context
+            id="sample1.localhost"
+            label="Sample 1 (localhost)">
+         <connection
+               autoReconnectDelay="10000"
+               servicePid="connection.main"
                uri="da:net://localhost:1202">
          </connection>
          <factory
