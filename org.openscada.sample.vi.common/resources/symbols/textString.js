@@ -3,10 +3,10 @@ function updateValue ( itemName )
 	setColor ( controller.getElement ("left" ) );
 	setColor ( controller.getElement ("right" ) );
 	
-	var format = controller.getProperty("format", "%.1f");
+	var format = controller.getProperty("format", "%s");
 	
 	// set text
-	var value = data.getPrimaryValue (itemName).asDouble(null);
+	var value = data.getPrimaryValue (itemName).toLabel();
 	controller.getElement("label").setText ( value == null ? "" : java.lang.String.format ( format, [value] ) );
 }
 
