@@ -17,6 +17,7 @@
       </children>
     </content>
   </root>
-  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/colors.js</scriptModules>
   <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/symbols/textString.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/colors.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/detailDialog.js</scriptModules>
 </visualInterface:Symbol>

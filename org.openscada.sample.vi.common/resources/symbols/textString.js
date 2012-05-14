@@ -12,7 +12,7 @@ function updateValue ( itemName )
 
 function onClick ()
 {
-	
+	openItemDetails ( controller.getProperty ( "connection" ), controller.getProperty ("item" ) );
 }
 
 function setColor ( element )

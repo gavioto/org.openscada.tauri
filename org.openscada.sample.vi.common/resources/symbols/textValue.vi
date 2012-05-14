@@ -19,4 +19,5 @@
   </root>
   <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/symbols/textValue.js</scriptModules>
   <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/colors.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/detailDialog.js</scriptModules>
 </visualInterface:Symbol>
