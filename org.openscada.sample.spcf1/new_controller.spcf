@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="ASCII"?>
+<controller:Controller xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:controller="http://openscada.org/prototype/spreadsheet" spreadsheet="${resource_loc:/org.openscada.sample.spcf1/IOList-generated.xls}" connectionEndpoint="da:net://0.0.0.0:1204"/>
