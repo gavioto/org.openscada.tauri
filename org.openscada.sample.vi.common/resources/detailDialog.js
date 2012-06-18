@@ -29,10 +29,10 @@ function openDetailDialog ( id, properties )
 	println ( "Opening detail dialog: " + id );
 	
 	var parameters = {
-			"org.openscada.vi.details.swt.showDetailDialog.id":id,
-			"org.openscada.vi.details.swt.showDetailDialog.parameters":GSON.toJson(makeMap(properties))
+			"org.openscada.vi.details.showDetailDialog.id":id,
+			"org.openscada.vi.details.showDetailDialog.parameters":GSON.toJson(makeMap(properties))
 	};
-	executeCommand ( "org.openscada.vi.details.swt.showDetailDialog", parameters );
+	executeCommand ( "org.openscada.vi.details.showDetailDialog", parameters );
 }
 
 function makeMap(properties)
