@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" backgroundColor="#FFFFFF">
+  <root xsi:type="visualInterface:GridContainer" columns="3">
+    <children horizontalAlignment="CENTER" verticalAlignment="CENTER" grabHorizontalSpace="true" grabVerticalSpace="true" spanCols="3">
+      <element xsi:type="visualInterface:Image" uri="platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/images/main.png"/>
+    </children>
+    <children grabHorizontalSpace="true" spanCols="2"/>
+    <children horizontalAlignment="END" verticalAlignment="END">
+      <element xsi:type="visualInterface:Image" uri="platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/images/extra.png"/>
+    </children>
+  </root>
+</visualInterface:Symbol>

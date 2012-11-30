@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<detailView:View xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:detailView="http://openscada.org/openSCADA/DetailView/1.0">
+  <headerComponent xsi:type="detailView:ValueComponent" format="Summary" descriptor="$linkTarget$OS.SAMPLE.DEV01.SUM.V"/>
+  <groups label="Overview">
+    <component xsi:type="detailView:GroupGridComponent">
+      <groups label="Values">
+        <components xsi:type="detailView:TextComponent" format="Average Value" hdConnectionId="$hdConnection$" hdItemId="OS.SAMPLE.DEV01.DATA.AVG_AR.V.hd" hdQueryString="86400000:3600000:50:150" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_AR.V"/>
+        <components xsi:type="detailView:TextComponent" format="Raw Value" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.RAW.V"/>
+      </groups>
+      <groups label="State">
+        <components xsi:type="detailView:TextComponent" format="Current State" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.STATE.V"/>
+        <components xsi:type="detailView:TextComponent" format="Next State" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.NSTATE.V"/>
+      </groups>
+      <groups label="Averages" permission="">
+        <components xsi:type="detailView:TextComponent" format="Min" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_MIN.V"/>
+        <components xsi:type="detailView:TextComponent" format="Max" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_MAX.V"/>
+        <components xsi:type="detailView:TextComponent" format="Median" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_MED.V"/>
+        <components xsi:type="detailView:TextComponent" format="Arithmethic" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_AR.V"/>
+        <components xsi:type="detailView:TextComponent" format="Weighted" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_WG.V"/>
+        <components xsi:type="detailView:TextComponent" format="Deviation Arithmetic" decimal=".000" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_DAR.V"/>
+        <components xsi:type="detailView:TextComponent" format="Deviation Weighted" decimal=".000" descriptor="$linkTarget$OS.SAMPLE.DEV01.DATA.AVG_DWG.V"/>
+      </groups>
+    </component>
+  </groups>
+  <groups label="Details"/>
+</detailView:View>
