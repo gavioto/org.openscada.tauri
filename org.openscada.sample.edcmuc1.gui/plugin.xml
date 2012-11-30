@@ -548,7 +548,7 @@
        factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
        id="org.openscada.sample.edcmuc1.placeholder"
        mainView="false"
-       name="Main"
+       name="Login"
        order="1"
        resource="resources/views/placeholder.vi"
        zooming="false">
@@ -574,6 +574,14 @@
             </reference>
          </visibility>
       </viewInstance>
+  <viewInstance
+        factoryClass="org.openscada.vi.ui.chart.draw2d.view.ChartViewFactory"
+        id="org.openscada.sample.edcmuc1.arduino1"
+        mainView="false"
+        name="Chart Sample"
+        parent="org.openscada.sample.edcmuc1.main"
+        resource="resources/charts/arduino1.chart">
+  </viewInstance>
      </extension>
      
      <extension

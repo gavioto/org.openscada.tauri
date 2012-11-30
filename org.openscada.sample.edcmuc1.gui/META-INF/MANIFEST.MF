@@ -13,6 +13,7 @@ Require-Bundle: org.eclipse.ui,
  org.openscada.vi.details;bundle-version="1.0.0",
  org.openscada.vi.details.swt;bundle-version="1.0.0",
  org.openscada.vi.ui.viewer;bundle-version="0.17.0",
- org.openscada.vi.ui.viewer.ext;bundle-version="1.0.0"
+ org.openscada.vi.ui.viewer.ext;bundle-version="1.0.0",
+ org.openscada.vi.ui.chart.draw2d;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
