@@ -105,6 +105,10 @@
   	
   	<openscada.builder.copyPlugin id="org.openscada.sample.arduino1"/>
   	<openscada.builder.copyPlugin id="org.openscada.sample.vi.common"/>
+  	
+  	<openscada.builder.copyFeature id="org.openscada.sample.edcmuc1.feature"/>
+  	<openscada.builder.copyPlugin id="org.openscada.sample.edcmuc1.gui"/>
+  	
   </target>
 
   <!-- ===================================================================== -->

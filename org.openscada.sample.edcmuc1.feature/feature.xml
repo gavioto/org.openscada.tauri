@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.openscada.sample.edcmuc1.feature"
+      label="EDCMUC1 Feature"
+      version="1.0.0.qualifier"
+      provider-name="Jens Reimann">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.openscada.core.ui.connection.login" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.openscada.ae.ui.views" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.openscada.vi.ui.user" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.openscada.vi.details" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.openscada.vi.details.swt" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.openscada.vi.ui.viewer" version="0.17.0" match="greaterOrEqual"/>
+      <import plugin="org.openscada.vi.ui.viewer.ext" version="1.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.openscada.sample.edcmuc1.gui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
