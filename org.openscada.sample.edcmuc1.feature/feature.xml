@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.openscada.sample.edcmuc1.feature"
+      id="org.openscada.sample.edcmuc1"
       label="EDCMUC1 Feature"
       version="1.0.0.qualifier"
       provider-name="Jens Reimann">
