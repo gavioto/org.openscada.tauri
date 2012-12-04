@@ -224,7 +224,7 @@
         <extension
          point="org.openscada.ae.ui.views.configuration">
       <alarmNotifier
-            connectionId="connection.master.info"
+            connectionId="connection.master.da"
             prefix="ae.server.info"
             soundFile="resources/alert.wav">
          <ackAlarmsAvailableCommand
