@@ -17,6 +17,18 @@
       %license
    </license>
 
+   <includes
+         id="org.openscada.da.client.test"
+         version="0.0.0"/>
+
+   <includes
+         id="org.openscada.ae.client.test"
+         version="0.0.0"/>
+
+   <includes
+         id="org.openscada.hd.client.test"
+         version="0.0.0"/>
+
    <requires>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
