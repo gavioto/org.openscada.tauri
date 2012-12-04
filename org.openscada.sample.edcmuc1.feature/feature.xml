@@ -17,18 +17,6 @@
       %license
    </license>
 
-   <includes
-         id="org.openscada.da.client.test"
-         version="0.0.0"/>
-
-   <includes
-         id="org.openscada.ae.client.test"
-         version="0.0.0"/>
-
-   <includes
-         id="org.openscada.hd.client.test"
-         version="0.0.0"/>
-
    <requires>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
@@ -39,6 +27,11 @@
       <import plugin="org.openscada.vi.details.swt" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.openscada.vi.ui.viewer" version="0.17.0" match="greaterOrEqual"/>
       <import plugin="org.openscada.vi.ui.viewer.ext" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.openscada.ae.ui.connection.creator.net"/>
+      <import plugin="org.openscada.ae.ui.connection.creator.ngp"/>
+      <import plugin="org.openscada.da.ui.connection.creator.net"/>
+      <import plugin="org.openscada.hd.ui.connection.creator.net"/>
+      <import plugin="org.openscada.hd.ui.connection.creator.ngp"/>
    </requires>
 
    <plugin
