@@ -32,6 +32,7 @@
       <import plugin="org.openscada.da.ui.connection.creator.net"/>
       <import plugin="org.openscada.hd.ui.connection.creator.net"/>
       <import plugin="org.openscada.hd.ui.connection.creator.ngp"/>
+      <import plugin="org.openscada.ui.chart.view"/>
    </requires>
 
    <plugin
