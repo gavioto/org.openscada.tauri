@@ -3,7 +3,7 @@
    <feature url="features/org.openscada.sample.arduino1_1.0.0.qualifier.jar" id="org.openscada.sample.arduino1" version="1.0.0.qualifier">
       <category name="org.openscada.tauri.arduino1.category"/>
    </feature>
-   <feature url="features/org.openscada.sample.edcmuc1.feature_1.0.0.qualifier.jar" id="org.openscada.sample.edcmuc1.feature" version="1.0.0.qualifier">
+   <feature url="features/org.openscada.sample.edcmuc1_1.0.0.qualifier.jar" id="org.openscada.sample.edcmuc1" version="1.0.0.qualifier">
       <category name="org.openscada.tauri.edcmuc1.category"/>
    </feature>
    <category-def name="org.openscada.tauri.arduino1.category" label="openSCADA Tau&apos;ri Arduino 1">
