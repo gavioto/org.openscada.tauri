@@ -15,4 +15,5 @@
   </root>
   <properties key="connection" value="connection.master.da"/>
   <properties key="hdConnection" value="connection.master.hd"/>
+  <designSize width="400.0" height="300.0"/>
 </visualInterface:Symbol>

@@ -560,13 +560,14 @@
       </viewInstance>
      
  	<viewInstance
-       defaultInstance="true"
-       factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
-       id="org.openscada.sample.edcmuc1.main"
-       mainView="false"
-       name="Main"
-       order="1"
-       resource="resources/views/main.vi">
+        defaultInstance="true"
+        factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
+        id="org.openscada.sample.edcmuc1.main"
+        mainView="false"
+        name="Main"
+        order="1"
+        resource="resources/views/main.vi"
+        zooming="true">
          <visibility>
             <reference
                   definitionId="edcmuc1.hasSession">
