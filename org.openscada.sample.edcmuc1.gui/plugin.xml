@@ -566,8 +566,7 @@
        mainView="false"
        name="Main"
        order="1"
-       resource="resources/views/main.vi"
-       zooming="false">
+       resource="resources/views/main.vi">
          <visibility>
             <reference
                   definitionId="edcmuc1.hasSession">
