@@ -17,6 +17,10 @@
       %license
    </license>
 
+   <url>
+      <discovery label="Indigo" url="http://download.eclipse.org/releases/indigo"/>
+   </url>
+
    <includes
          id="org.eclipse.emf"
          version="0.0.0"/>
