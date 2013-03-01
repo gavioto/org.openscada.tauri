@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.openscada.sample.arduino1;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: openSCADA.org
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: org.openscada.vi.ui.user;bundle-version="0.17.0",
+Require-Bundle: org.openscada.vi.ui.user;bundle-version="1.0.0",
  org.openscada.vi.sample1;bundle-version="1.0.0",
- org.openscada.core.ui.connection.login,
- org.openscada.core.ui.connection;bundle-version="0.17.0"
+ org.openscada.core.ui.connection.login;bundle-version="1.0.0",
+ org.openscada.core.ui.connection;bundle-version="1.0.0"
