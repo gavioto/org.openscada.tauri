@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface">
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:FigureContainer">
+        <content xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/symbols/arduino1.vi">
+          <properties key="component" value="c1"/>
+          <properties key="location" value="l1"/>
+          <properties key="namespace" value="n1"/>
+          <properties key="prefix" value="p1"/>
+        </content>
+      </element>
+      <position x="30.0" y="30.0"/>
+    </children>
+  </root>
+  <properties key="connection" value="connection.master.da"/>
+  <properties key="hdConnection" value="connection.master.hd"/>
+  <designSize width="400.0" height="300.0"/>
+</visualInterface:Symbol>

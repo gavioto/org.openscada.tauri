@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.openscada.deploy.iolist.model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.openscada.deploy.iolist.model="http:///org/openscada/deploy/iolist/model.ecore">
+  <items xsi:type="org.openscada.deploy.iolist.model:MovingAverageItem" device="" name="" dataType="FLOAT" alias="OS.SAMPLE.DEV01.DATA.AVG_MIN.V" description="" system="SCADA" output="false" average="arduino1.raw.average">
+    <hierarchy>SAMPLE</hierarchy>
+    <hierarchy>DEV01</hierarchy>
+    <hierarchy>DATA</hierarchy>
+    <localHighHigh active="false" ack="false"/>
+  </items>
+  <items xsi:type="org.openscada.deploy.iolist.model:MovingAverageItem" device="" name="" dataType="FLOAT" alias="OS.SAMPLE.DEV01.DATA.AVG_MAX.V" description="" system="SCADA" output="false" average="arduino1.raw.average" type="max">
+    <hierarchy>SAMPLE</hierarchy>
+    <hierarchy>DEV01</hierarchy>
+    <hierarchy>DATA</hierarchy>
+    <localHighHigh active="false" ack="false"/>
+  </items>
+  <items xsi:type="org.openscada.deploy.iolist.model:MovingAverageItem" device="" name="" dataType="FLOAT" alias="OS.SAMPLE.DEV01.DATA.AVG_MED.V" description="" system="SCADA" output="false" average="arduino1.raw.average" type="median">
+    <hierarchy>SAMPLE</hierarchy>
+    <hierarchy>DEV01</hierarchy>
+    <hierarchy>DATA</hierarchy>
+    <localHighHigh active="false" ack="false"/>
+  </items>
+  <items xsi:type="org.openscada.deploy.iolist.model:MovingAverageItem" device="" name="" dataType="FLOAT" alias="OS.SAMPLE.DEV01.DATA.AVG_AR.V" description="" system="SCADA" output="false" hdStorage="OS.SAMPLE.DEV01.DATA.AVG_AR.V" average="arduino1.raw.average" type="arithmetic">
+    <hierarchy>SAMPLE</hierarchy>
+    <hierarchy>DEV01</hierarchy>
+    <hierarchy>DATA</hierarchy>
+    <localHighHigh active="false" ack="false"/>
+  </items>
+  <items xsi:type="org.openscada.deploy.iolist.model:MovingAverageItem" device="" name="" dataType="FLOAT" alias="OS.SAMPLE.DEV01.DATA.AVG_WG.V" description="" system="SCADA" output="false" average="arduino1.raw.average" type="weighted">
+    <hierarchy>SAMPLE</hierarchy>
+    <hierarchy>DEV01</hierarchy>
+    <hierarchy>DATA</hierarchy>
+    <localHighHigh active="false" ack="false"/>
+  </items>
+  <items xsi:type="org.openscada.deploy.iolist.model:MovingAverageItem" device="" name="" dataType="FLOAT" alias="OS.SAMPLE.DEV01.DATA.AVG_DAR.V" description="" system="SCADA" output="false" average="arduino1.raw.average" type="deviationArithmetic">
+    <hierarchy>SAMPLE</hierarchy>
+    <hierarchy>DEV01</hierarchy>
+    <hierarchy>DATA</hierarchy>
+    <localHighHigh active="false" ack="false"/>
+  </items>
+  <items xsi:type="org.openscada.deploy.iolist.model:MovingAverageItem" device="" name="" dataType="FLOAT" alias="OS.SAMPLE.DEV01.DATA.AVG_DWG.V" description="" system="SCADA" output="false" average="arduino1.raw.average" type="deviationWeighted">
+    <hierarchy>SAMPLE</hierarchy>
+    <hierarchy>DEV01</hierarchy>
+    <hierarchy>DATA</hierarchy>
+    <localHighHigh active="false" severity="ALARM"/>
+    <localHigh active="false" ack="false" severity="WARNING"/>
+    <localLow active="false" ack="false" severity="WARNING"/>
+    <localLowLow active="false" severity="ALARM"/>
+    <localMin active="false"/>
+    <localMax active="false" ack="false"/>
+  </items>
+  <movingAverages id="arduino1.raw.average" source="OS.SAMPLE.DEV01.DATA.RAW.V.master" trigger="1" range="30" nullRange="10"/>
+</org.openscada.deploy.iolist.model:Model>

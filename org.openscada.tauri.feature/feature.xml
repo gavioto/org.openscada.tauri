@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.openscada.tauri"
-      label="openSCADA Tau&apos;ri Feature"
-      version="0.18.0.qualifier"
-      provider-name="TH4 SYSTEMS GmbH">
+      label="%featureName"
+      version="1.0.0.qualifier"
+      provider-name="openSCADA.org">
 
    <description>
       The openSCADA Examples Project
@@ -19,6 +19,10 @@
 
    <includes
          id="org.openscada.sample.arduino1"
+         version="0.0.0"/>
+
+   <includes
+         id="org.openscada.sample.edcmuc1"
          version="0.0.0"/>
 
    <requires>

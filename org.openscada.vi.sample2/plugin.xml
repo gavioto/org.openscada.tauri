@@ -7,21 +7,29 @@
             defaultInstance="true"
             id="view1"
             name="My First View"
+            mainView="true"
+            factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
             uri="platform:/plugin/org.openscada.vi.sample1/resources/My.vi">
       </viewInstance>
       <viewInstance
             id="view2"
             name="My Second View"
+            factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
+            mainView="true"
             resource="resources/My.vi">
       </viewInstance>
       <viewInstance
             id="sample1.blinking"
             name="Blink"
+            factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
+            mainView="true"
             uri="platform:/plugin/org.openscada.vi.sample1/resources/Blink.vi">
       </viewInstance>
       <viewInstance
             id="sample1.borders"
             name="Borders"
+            factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
+            mainView="true"
             uri="platform:/plugin/org.openscada.vi.sample1/resources/Border.vi">
       </viewInstance>
    </extension>

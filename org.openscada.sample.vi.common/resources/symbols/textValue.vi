@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" onInit="controller.registerItem ( &quot;A&quot;, controller.getProperty ( &quot;item&quot; ), controller.getProperty(&quot;connection&quot;));" onUpdate="updateValue ( &quot;A&quot;);">
-  <root xsi:type="visualInterface:FigureContainer" onDoubleClick="openDetails();">
+  <root xsi:type="visualInterface:FigureContainer" onDoubleClick="onClick();">
     <content xsi:type="visualInterface:BorderContainer">
       <children alignment="LEFT">
         <element xsi:type="visualInterface:Rectangle" name="left" foregroundColor="#c0c0c0">
@@ -8,7 +8,7 @@
         </element>
       </children>
       <children>
-        <element xsi:type="visualInterface:Text" name="label" foregroundColor="#000000" backgroundColor="#c0c0c0" onClick="onClick ();" border="" opaque="true" text="" fontSize="9"/>
+        <element xsi:type="visualInterface:Text" name="label" foregroundColor="#000000" backgroundColor="#c0c0c0" border="" opaque="true" text="" fontSize="9"/>
       </children>
       <children alignment="RIGHT">
         <element xsi:type="visualInterface:Rectangle" name="right" foregroundColor="#c0c0c0">
@@ -19,4 +19,5 @@
   </root>
   <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/symbols/textValue.js</scriptModules>
   <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/colors.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.vi.common/resources/detailDialog.js</scriptModules>
 </visualInterface:Symbol>

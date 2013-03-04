@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface">
+  <root xsi:type="visualInterface:FigureContainer" backgroundColor="#FFFFFF" opaque="true">
+    <content xsi:type="visualInterface:BorderContainer">
+      <children alignment="TOP">
+        <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/symbols/header.vi" onCreateProperties="makeHeaderProperties();">
+          <properties key="title" value="Arduino #1"/>
+          <properties key="detailsId" value="org.openscada.sample.edcmuc1.details1"/>
+          <properties key="viewId" value="org.openscada.sample.edcmuc1.arduino1"/>
+          <properties key="sumItem" value="OS.SAMPLE.DEV01.SUM.V"/>
+        </element>
+      </children>
+      <children>
+        <element xsi:type="visualInterface:GridContainer" columns="2">
+          <children>
+            <element xsi:type="visualInterface:Text" text="Average Value:"/>
+          </children>
+          <children horizontalAlignment="FILL" widthHint="100">
+            <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/symbols/textValue.vi">
+              <properties key="item" value="OS.SAMPLE.DEV01.DATA.AVG_AR.V"/>
+            </element>
+          </children>
+          <children>
+            <element xsi:type="visualInterface:Text" text="Raw Value:"/>
+          </children>
+          <children horizontalAlignment="FILL" widthHint="100">
+            <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/symbols/textValue.vi">
+              <properties key="item" value="OS.SAMPLE.DEV01.DATA.RAW.V"/>
+            </element>
+          </children>
+          <children>
+            <element xsi:type="visualInterface:Text" text="State:"/>
+          </children>
+          <children horizontalAlignment="FILL">
+            <element xsi:type="visualInterface:SymbolReference" uri="platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/symbols/textValue.vi">
+              <properties key="item" value="OS.SAMPLE.DEV01.DATA.STATE.V"/>
+              <properties key="format" value="%.0f"/>
+            </element>
+          </children>
+        </element>
+      </children>
+    </content>
+  </root>
+  <scriptModules>platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/symbols/arduino1.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/common.js</scriptModules>
+  <scriptModules>platform:/plugin/org.openscada.sample.edcmuc1.gui/resources/detailDialog.js</scriptModules>
+</visualInterface:Symbol>

@@ -1,0 +1,14 @@
+{
+  "org.openscada.sec.provider.jdbc.authenticator": {
+    "userService1": {
+	    "driver": "org.postgresql.Driver",
+	    "passwordType": "MD5_HEX",
+	    "jdbc.properties.user": "openscada",
+	    "jdbc.properties.serverName": "localhost",
+	    "jdbc.properties.password": "openscada",
+	    "jdbc.properties.databaseName": "openscada",
+		"findUserSql": "select password from os_users where user_id=:USER_ID and enabled=true",
+		"findRolesForUserSql": "select role_name from os_role_assigns where actor_id=:USER_ID and actor_type='USER' union select role_name from os_group_assigns a join os_role_assigns b on ( a.group_id=b.actor_id and b.actor_type='GROUP') where a.user_id=:USER_ID"
+    }
+  }
+}

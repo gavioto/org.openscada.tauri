@@ -105,6 +105,10 @@
   	
   	<openscada.builder.copyPlugin id="org.openscada.sample.arduino1"/>
   	<openscada.builder.copyPlugin id="org.openscada.sample.vi.common"/>
+  	
+  	<openscada.builder.copyFeature id="org.openscada.sample.edcmuc1"/>
+  	<openscada.builder.copyPlugin id="org.openscada.sample.edcmuc1.gui"/>
+  	
   </target>
 
   <!-- ===================================================================== -->
@@ -136,6 +140,12 @@
   <!-- Steps to do before running the build.xmls for the elements being built. -->
   <!-- ===================================================================== -->
   <target name="preProcess">
+	<property file="${buildDirectory}/finalFeaturesVersions.properties"/>
+  	<echo message="Setting about versions: ${org.openscada.tauri}"/>
+  	<replace dir="${buildDirectory}/plugins" value="${org.openscada.tauri}">
+  		<include name="**/about.mappings"/>
+  		<replacetoken>@@VERSION@@</replacetoken>
+  	</replace>
   </target>
 
   <!-- ===================================================================== -->

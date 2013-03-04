@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurator:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://openscada.org/Configurator/Processors/Common" xmlns:configurator="http://openscada.org/Deploy/Configurator" xmlns:hd="http://openscada.org/Deploy/Configurator/HD" xmlns:main="http://openscada.org/Configurator/Modules/Common/Main" xmlns:marker="http://openscada.org/Configurator/Modules/Common/Marker" xmlns:master="http://openscada.org/Deploy/Configurator/Master" xmlns:network="http://openscada.org/Configurator/Modules/Common/Network" xmlns:output="http://openscada.org/Configurator/Modules/Common/Output" xmlns:processing="http://openscada.org/Configurator/Modules/Common/Processing" xmlns:scripts="http://openscada.org/Configurator/Modules/Common/Scripts" xmlns:summary="http://openscada.org/Configurator/Modules/Common/Summary">
+  <slots xsi:type="master:AtlantisConfigurationSlot" id="default" baseDirectory="platform:/plugin/org.openscada.sample.edcmuc1.configurator/output/master">
+    <jsonBase>platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/json/parent.json</jsonBase>
+  </slots>
+  <slots xsi:type="hd:ConfigurationSlot" id="hd" baseDirectory="platform:/plugin/org.openscada.sample.edcmuc1.configurator/output/hdserver" masterConnectionUri="da:net://admin:admin@localhost:12040"/>
+  <processors xsi:type="master:ModuleProcessor" slot="default">
+    <modules xsi:type="network:NetworkModule" networkFile="platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/network.ods" prefix="OS.MUC.EDC"/>
+    <modules xsi:type="scripts:LegacyFormulaModule" formulaFile="platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/PARSERformulas"/>
+    <modules xsi:type="scripts:ScriptsModule" scriptsFile="platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/scripts.ods"/>
+    <modules xsi:type="main:MainLoader" file="platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/main.ods"/>
+    <modules xsi:type="processing:ImportModule">
+      <path>platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/import</path>
+    </modules>
+    <modules xsi:type="processing:ImportListModule">
+      <path>platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/iolist</path>
+    </modules>
+    <modules xsi:type="processing:OverrideListModule">
+      <path>platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/IOList-override.ods</path>
+    </modules>
+    <modules xsi:type="processing:RemoveInactive"/>
+    <modules xsi:type="summary:GenerateSummaries" prefix="OS" suffix=".SUM.V"/>
+    <modules xsi:type="scripts:ScriptsMonitorModule">
+      <path>platform:/plugin/org.openscada.sample.edcmuc1.configurator/input/scriptMonitors.ods</path>
+    </modules>
+    <modules xsi:type="output:OutputAverages"/>
+    <modules xsi:type="summary:CleanupSummaries"/>
+    <modules xsi:type="output:OutputSummaries"/>
+    <modules xsi:type="processing:ScriptOverrides">
+      <path>platform:/plugin/org.openscada.sample.edcmuc1.configurator/script.d</path>
+    </modules>
+    <modules xsi:type="marker:HierarchyMarkerGenerator" markerName="maintenance">
+      <markers name="maintenance.warning"/>
+      <markers name="maintenance.ack"/>
+    </modules>
+    <modules xsi:type="output:OutputItems"/>
+    <modules xsi:type="output:OutputGlobalSummaries"/>
+    <modules xsi:type="main:ValidateConfiguration"/>
+  </processors>
+  <processors xsi:type="hd:HDItemGenerator" hdSlot="hd" daSlot="default"/>
+  <processors xsi:type="hd:StorageCommandGenerator" slot="hd"/>
+  <processors xsi:type="common:StoreConfigurationSlotProcessor" slots="default hd"/>
+</configurator:Project>

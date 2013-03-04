@@ -2,8 +2,8 @@
 <feature
       id="org.openscada.sample.arduino1"
       label="Sample Arduino 1"
-      version="0.18.0.qualifier"
-      provider-name="TH4 SYSTEMS GmbH">
+      version="1.0.0.qualifier"
+      provider-name="openSCADA.org">
 
    <description>
       openSCADA Sample Ardunino 1

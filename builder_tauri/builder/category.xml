@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.openscada.sample.arduino1_0.18.0.qualifier.jar" id="org.openscada.sample.arduino1" version="0.18.0.qualifier">
+   <feature url="features/org.openscada.sample.arduino1_1.0.0.qualifier.jar" id="org.openscada.sample.arduino1" version="1.0.0.qualifier">
       <category name="org.openscada.tauri.arduino1.category"/>
+   </feature>
+   <feature url="features/org.openscada.sample.edcmuc1_1.0.0.qualifier.jar" id="org.openscada.sample.edcmuc1" version="1.0.0.qualifier">
+      <category name="org.openscada.tauri.edcmuc1.category"/>
    </feature>
    <category-def name="org.openscada.tauri.arduino1.category" label="openSCADA Tau&apos;ri Arduino 1">
       <description>
          An example with arduino and openSCADA
       </description>
    </category-def>
+   <category-def name="org.openscada.tauri.edcmuc1.category" label="openSCADA Eclipse Demo Camp Munich #1"/>
 </site>

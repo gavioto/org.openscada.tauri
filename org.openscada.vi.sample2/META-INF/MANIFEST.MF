@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Sample2
 Bundle-SymbolicName: org.openscada.vi.sample2;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: TH4 SYSTEMS GmbH
+Bundle-Vendor: openSCADA.org
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: org.openscada.vi.ui.user;bundle-version="0.17.0",
+Require-Bundle: org.openscada.vi.ui.user;bundle-version="1.0.0",
  org.openscada.vi.sample1;bundle-version="1.0.0"

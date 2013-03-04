@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart:Chart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:chart="http://openscada.org/UI/Chart" title="Sample Chart" selectedYAxis="#//@left.0" selectedXAxis="#//@bottom.0">
+  <bottom maximum="51000000"/>
+  <left minimum="-10.0" maximum="200.0"/>
+  <inputs xsi:type="chart:ArchiveSeries" label="OS.SAMPLE.DEV01.DATA.AVG_AR.V" x="#//@bottom.0" y="#//@left.0">
+    <item xsi:type="chart:IdItem" itemId="OS.SAMPLE.DEV01.DATA.AVG_AR.V.hd" connectionId="connection.master.hd"/>
+    <lineProperties width="2.0" color="#FF5555"/>
+  </inputs>
+  <controllers xsi:type="chart:CurrentTimeController" diff="-3600000" axis="#//@bottom.0" alignDateFormat="yyyy-MM-dd HH:00:00.000"/>
+</chart:Chart>

@@ -13,15 +13,26 @@ function openDefaultDetails (details)
 	});
 }
 
+function openItemDetails ( connectionId, itemId )
+{
+	println ( "Opening item detail dialog: " + connectionId + "#" + itemId );
+	
+	var parameters = {
+			"org.openscada.da.client.dataitem.details.itemId":itemId,
+			"org.openscada.da.client.dataitem.details.connectionId":connectionId
+	};
+	executeCommand ( "org.openscada.da.client.dataitem.details.openDetailsDialog", parameters );
+}
+
 function openDetailDialog ( id, properties )
 {
 	println ( "Opening detail dialog: " + id );
 	
 	var parameters = {
-			"com.thfour.pcs.ui.swt.process.showDetailDialog.id":id,
-			"com.thfour.pcs.ui.swt.process.showDetailDialog.parameters":GSON.toJson(makeMap(properties))
+			"org.openscada.vi.details.showDetailDialog.id":id,
+			"org.openscada.vi.details.showDetailDialog.parameters":GSON.toJson(makeMap(properties))
 	};
-	executeCommand ( "com.thfour.pcs.ui.swt.process.showDetailDialog", parameters );
+	executeCommand ( "org.openscada.vi.details.showDetailDialog", parameters );
 }
 
 function makeMap(properties)

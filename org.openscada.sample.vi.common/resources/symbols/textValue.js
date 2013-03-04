@@ -3,14 +3,16 @@ function updateValue ( itemName )
 	setColor ( controller.getElement ("left" ) );
 	setColor ( controller.getElement ("right" ) );
 	
+	var format = controller.getProperty("format", "%.1f");
+	
 	// set text
 	var value = data.getPrimaryValue (itemName).asDouble(null);
-	controller.getElement("label").setText ( value == null ? "" : java.lang.String.format ( "%.1f", [value] ) );
+	controller.getElement("label").setText ( value == null ? "" : java.lang.String.format ( format, [value] ) );
 }
 
 function onClick ()
 {
-	
+	openItemDetails ( controller.getProperty ( "connection" ), controller.getProperty ("item" ) );
 }
 
 function setColor ( element )
