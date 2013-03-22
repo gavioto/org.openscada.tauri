@@ -11,16 +11,19 @@
                class="org.openscada.core.ui.connection.login.factory.ConnectionLoginFactory">
          </factory>
          <connection
+               authUseCallbacks="false"
                autoReconnectDelay="10000"
                servicePid="connection.master.da"
                uri="da:net://openscada.local:12040?session.privilege.operator=true&amp;session.privilege.admin=true&amp;session.privilege.developer=true">
          </connection>
          <connection
+               authUseCallbacks="false"
                autoReconnectDelay="10000"
                servicePid="connection.master.ae"
                uri="ae:net://openscada.local:1302">
          </connection>
          <connection
+               authUseCallbacks="false"
                autoReconnectDelay="10000"
                mode="LAZY"
                servicePid="connection.master.hd"
