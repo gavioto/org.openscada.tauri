@@ -33,6 +33,7 @@
             id="sample1"
             label="Sample 1">
          <connection
+         	   authUseCallbacks="false"
                autoReconnectDelay="10000"
                servicePid="connection.main"
                uri="da:net://scadahost:1202">
@@ -45,6 +46,7 @@
             id="sample1.localhost"
             label="Sample 1 (localhost)">
          <connection
+               authUseCallbacks="false"
                autoReconnectDelay="10000"
                servicePid="connection.main"
                uri="da:net://localhost:1202">
