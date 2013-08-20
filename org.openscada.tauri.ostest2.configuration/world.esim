@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
-<infrastructure:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://openscada.org/Configuration" xmlns:infrastructure="http://openscada.org/Configuration/Infrastructure" xmi:id="_sgGGoAjJEeOc1J5f_UAm1w">
+<infrastructure:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://openscada.org/Configuration" xmlns:deployment="http://openscada.org/Configuration/Deployment" xmlns:infrastructure="http://openscada.org/Configuration/Infrastructure" xmi:id="_sgGGoAjJEeOc1J5f_UAm1w">
   <nodes xsi:type="infrastructure:SystemNode" xmi:id="_sgGtsAjJEeOc1J5f_UAm1w" hostName="demo.openscada.org">
+    <deployment xsi:type="deployment:RedhatDeploymentMechanism" xmi:id="_kX7uoAl3EeOrEc-kkIlmxw">
+      <changes xmi:id="_1iYBYAl3EeOSxItJEDIcmQ" date="2013-08-20T11:06:43.778+0200" description="Initial version" version="0.1.0">
+        <author href="global/deployment.information.esdi#//@authors.0"/>
+      </changes>
+      <maintainer href="global/deployment.information.esdi#//@authors.0"/>
+    </deployment>
     <drivers xmi:id="_sgGtsQjJEeOc1J5f_UAm1w" name="exec" driverTypeId="org.openscada.da.server.exec" portNumber="2107"/>
     <valueArchives xmi:id="_sgHUwAjJEeOc1J5f_UAm1w" name="hdserver" instanceNumber="2"/>
     <masters xmi:id="_sgH70AjJEeOc1J5f_UAm1w" name="master" driver="_sgGtsQjJEeOc1J5f_UAm1w" archiveTo="_sgHUwAjJEeOc1J5f_UAm1w">
