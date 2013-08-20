@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component="http://openscada.org/Configuration/Component" xmlns:item="http://openscada.org/Configuration/Item" xmi:id="_rn-rQAlrEeOc1J5f_UAm1w">
+  <levels xmi:id="_58AxkAlrEeOc1J5f_UAm1w" name="OS">
+    <levels xmi:id="_7A6kIAlrEeOc1J5f_UAm1w" name="DEMO">
+      <levels xmi:id="_8jLoIAlrEeOc1J5f_UAm1w" name="SYS">
+        <components xsi:type="component:LoadAverage" xmi:id="_rn_SVQlrEeOc1J5f_UAm1w">
+          <masterOn href="world.esim#_sgH70AjJEeOc1J5f_UAm1w"/>
+          <runsOn href="world.esim#_sgGtsQjJEeOc1J5f_UAm1w"/>
+        </components>
+        <levels xmi:id="_9QpyIAlrEeOc1J5f_UAm1w" name="DRV">
+          <levels xmi:id="_96MeYAlrEeOc1J5f_UAm1w" name="EXEC">
+            <components xsi:type="component:DriverConnectionAnalyzer" xmi:id="_rn_SWAlrEeOc1J5f_UAm1w">
+              <masterOn href="world.esim#_sgH70AjJEeOc1J5f_UAm1w"/>
+              <connection href="world.esim#_sgGtsQjJEeOc1J5f_UAm1w"/>
+            </components>
+          </levels>
+        </levels>
+      </levels>
+    </levels>
+  </levels>
+  <configurations xsi:type="component:MarkerConfiguration" xmi:id="_rn_SWQlrEeOc1J5f_UAm1w">
+    <markers xmi:id="_rn_SWglrEeOc1J5f_UAm1w" name="maintenance.warning"/>
+    <markers xmi:id="_rn_SWwlrEeOc1J5f_UAm1w" name="maintenance.ack"/>
+  </configurations>
+  <infrastructure href="world.esim#_sgGGoAjJEeOc1J5f_UAm1w"/>
+  <defaultCustomizationPipeline xsi:type="item:JavaScriptCustomizationPipeline" href="customization/default.icm_js#/"/>
+  <defaultArchiveSelector xsi:type="item:JavaScriptSelector" href="customization/archiveSelector.isel_js#/"/>
+</component:System>

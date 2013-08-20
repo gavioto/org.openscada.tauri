@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<profile:profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:profile="http://openscada.org/Configuration/OSGi/Profile" xsi:schemaLocation="http://openscada.org/Configuration/OSGi/Profile http://openscada.org/Configuration#//osgi/profile" includes="../../../plugin/org.openscada.configuration.lib/model/database.h2.profile.xml#/" name="Value Archive Server Customization Profile">
+  <start>org.openscada.ca.file</start>
+  <property key="org.openscada.ca.file.root">${user.home}/.openscada/ca.master</property>
+</profile:profile>

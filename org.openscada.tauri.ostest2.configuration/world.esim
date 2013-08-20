@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<infrastructure:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://openscada.org/Configuration" xmlns:infrastructure="http://openscada.org/Configuration/Infrastructure" xmi:id="_sgGGoAjJEeOc1J5f_UAm1w">
+  <nodes xsi:type="infrastructure:SystemNode" xmi:id="_sgGtsAjJEeOc1J5f_UAm1w" hostName="demo.openscada.org">
+    <drivers xmi:id="_sgGtsQjJEeOc1J5f_UAm1w" name="exec" driverTypeId="org.openscada.da.server.exec" portNumber="2107"/>
+    <valueArchives xmi:id="_sgHUwAjJEeOc1J5f_UAm1w" name="hdserver" instanceNumber="2"/>
+    <masters xmi:id="_sgH70AjJEeOc1J5f_UAm1w" name="master" driver="_sgGtsQjJEeOc1J5f_UAm1w" archiveTo="_sgHUwAjJEeOc1J5f_UAm1w">
+      <authoratives xmi:id="_sgIi4AjJEeOc1J5f_UAm1w">
+        <hierarchy>OS</hierarchy>
+        <hierarchy>DEMO</hierarchy>
+      </authoratives>
+    </masters>
+  </nodes>
+  <options xmi:id="_sgJxAAjJEeOc1J5f_UAm1w">
+    <monitorPools xmi:id="_sgKYEAjJEeOc1J5f_UAm1w" name="monitors.unsafe" filter="(status=UNSAFE)"/>
+    <monitorPools xmi:id="_sgKYEQjJEeOc1J5f_UAm1w" name="monitors.inactive" filter="(status=INACTIVE)"/>
+    <monitorPools xmi:id="_sgKYEgjJEeOc1J5f_UAm1w" name="monitors.not_ok" filter="(|(status=NOT_OK)(status=NOT_OK_NOT_AKN)(status=NOT_OK_AKN))"/>
+    <monitorPools xmi:id="_sgK_IAjJEeOc1J5f_UAm1w" name="monitors.ack_required" filter="(|(status=NOT_AKN)(status=NOT_OK_NOT_AKN))"/>
+    <monitorPools xmi:id="_sgK_IQjJEeOc1J5f_UAm1w" name="monitors.init" filter="(status=INIT)"/>
+    <monitorPools xmi:id="_sgK_IgjJEeOc1J5f_UAm1w" name="monitors.all" filter="(status=*)"/>
+    <eventPools xmi:id="_sgK_IwjJEeOc1J5f_UAm1w" name="events.all" filter="(eventType=*)" size="10000"/>
+    <defaultUserService xsi:type="infrastructure:SystemPropertyUserService" xmi:id="_sgLmMAjJEeOc1J5f_UAm1w">
+      <users xmi:id="_sgMNQAjJEeOc1J5f_UAm1w" name="admin" password="admin12"/>
+      <users xmi:id="_sgMNQQjJEeOc1J5f_UAm1w" name="interconnect" password="interconnect12"/>
+    </defaultUserService>
+  </options>
+  <defaultSecurityConfiguration href="global/global.security#/"/>
+  <defaultMasterHandlerPriorities href="platform:/plugin/org.openscada.configuration.lib/model/defaultPriorities.oswf#_sLVwoN_iEeKP_IG4d7_Nqg"/>
+  <defaultCredentials xsi:type="configuration:UsernamePasswordCredentials" xmi:id="_sgOCcAjJEeOc1J5f_UAm1w" username="interconnect" password="interconnect12"/>
+  <defaultMasterCustomizationProfile href="global/master.customization.profile.xml#/"/>
+  <defaultValueArchiveCustomizationProfile href="global/hdserver.customization.profile.xml#/"/>
+  <defaultDriverPassword xmi:id="_sgPQkAjJEeOc1J5f_UAm1w" password="driver12"/>
+</infrastructure:World>
