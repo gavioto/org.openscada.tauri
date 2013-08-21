@@ -4,11 +4,12 @@
    <extension
          point="org.openscada.vi.ui.user.view">
       <viewInstance
+            defaultInstance="true"
             factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
             id="org.openscada.tauri.ostest2.client.default"
             mainView="false"
             name="Main"
-            resource="resources/views/default.vi">
+            resource="resources/views/placeholder.vi">
          <visibility>
             <reference
                   definitionId="org.openscada.tauri.ostest2.client.noSession">
@@ -42,6 +43,25 @@
        </with>
     </and>
       </definition>
+   </extension>
+   <extension
+         point="org.openscada.core.ui.connection.login.context">
+      <context
+            id="org.openscada.tauri.ostest2.client.DemoSystem"
+            label="Demo System">
+         <connection
+               authUseCallbacks="true"
+               autoReconnectDelay="10000"
+               mode="NORMAL"
+               uri="da:ngp://demo.openscada.org:2101">
+            <registration
+                  servicePid="connection.da.demo">
+            </registration>
+         </connection>
+         <factory
+               class="org.openscada.core.ui.connection.login.factory.ConnectionLoginFactory">
+         </factory>
+      </context>
    </extension>
 
 </plugin>

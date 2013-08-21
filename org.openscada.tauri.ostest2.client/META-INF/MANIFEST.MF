@@ -8,6 +8,11 @@ Bundle-Vendor: openSCADA.org
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.openscada.vi.ui.user,
- org.eclipse.core.expressions
+ org.eclipse.core.expressions,
+ org.openscada.core.ui.connection.login,
+ org.openscada.ae.ui.connection.creator.ngp;bundle-version="1.0.0",
+ org.openscada.ca.ui.connection.creator.ngp;bundle-version="1.0.0",
+ org.openscada.da.ui.connection.creator.ngp;bundle-version="1.0.0",
+ org.openscada.hd.ui.connection.creator.ngp;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
