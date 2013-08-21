@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.openscada.vi.ui.user.view">
+      <viewInstance
+            factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
+            id="org.openscada.tauri.ostest2.client.default"
+            mainView="false"
+            name="Main"
+            resource="resources/views/default.vi">
+         <visibility>
+            <reference
+                  definitionId="org.openscada.tauri.ostest2.client.noSession">
+            </reference>
+         </visibility>
+      </viewInstance>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="org.openscada.tauri.ostest2.client.noSession">
+    <and>
+       <not>
+          <with
+                variable="org.openscada.core.ui.connection.login.sessionState">
+             <equals
+                   value="loggedIn">
+             </equals>
+          </with>
+       </not>
+    </and>
+      </definition>
+      <definition
+            id="org.openscada.tauri.ostest2.client.hasSession">
+              <and>
+       <with
+             variable="org.openscada.core.ui.connection.login.sessionState">
+          <equals
+                value="loggedIn">
+          </equals>
+       </with>
+    </and>
+      </definition>
+   </extension>
+
+</plugin>

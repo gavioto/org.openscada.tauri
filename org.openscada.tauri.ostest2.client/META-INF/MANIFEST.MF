@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Client Configuration
+Bundle-SymbolicName: org.openscada.tauri.ostest2.client;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.openscada.tauri.ostest2.client.Activator
+Bundle-Vendor: openSCADA.org
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.openscada.vi.ui.user,
+ org.eclipse.core.expressions
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
