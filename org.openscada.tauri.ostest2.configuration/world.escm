@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="ASCII"?>
-<component:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xmlns:component="http://openscada.org/Configuration/Component"
-  xmlns:execComponent="http://openscada.org/Configuration/Component/Exec" 
- xmlns:item="http://openscada.org/Configuration/Item" xmi:id="_rn-rQAlrEeOc1J5f_UAm1w">
+<component:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component="http://openscada.org/Configuration/Component" xmlns:exec="http://openscada.org/Configuration/Component/Exec" xmlns:item="http://openscada.org/Configuration/Item" xmi:id="_rn-rQAlrEeOc1J5f_UAm1w">
   <levels xmi:id="_58AxkAlrEeOc1J5f_UAm1w" name="OS">
     <levels xmi:id="_7A6kIAlrEeOc1J5f_UAm1w" name="DEMO">
       <levels xmi:id="_8jLoIAlrEeOc1J5f_UAm1w" name="SYS">
-        <components xsi:type="execComponent:LoadAverage" xmi:id="_rn_SVQlrEeOc1J5f_UAm1w">
+        <components xsi:type="exec:LoadAverage" xmi:id="_rn_SVQlrEeOc1J5f_UAm1w">
+          <masterOn href="world.esim#_sgH70AjJEeOc1J5f_UAm1w"/>
+          <runsOn href="world.esim#_sgGtsQjJEeOc1J5f_UAm1w"/>
+        </components>
+        <components xsi:type="exec:SystemInformationVMStat" xmi:id="_d1QVoApEEeOzeY6P0K3mpQ">
           <masterOn href="world.esim#_sgH70AjJEeOc1J5f_UAm1w"/>
           <runsOn href="world.esim#_sgGtsQjJEeOc1J5f_UAm1w"/>
         </components>
