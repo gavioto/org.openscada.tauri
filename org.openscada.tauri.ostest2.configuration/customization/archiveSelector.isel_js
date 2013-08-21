@@ -1,5 +1,8 @@
 function select () {
-	if ( request.isComponentClass ( "PingCheck" ) ) {
+	if ( request.isComponentClass ( "LoadAverage" ) ) {
+		return true;
+	}
+	if ( request.isComponentClass ( "SystemInformationVMStat" ) ) {
 		return true;
 	}
 }
