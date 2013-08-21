@@ -170,7 +170,7 @@
                mode="OPTIONAL"
                uri="hd:ngp://demo.openscada.org:2301">
             <registration
-                  servicePid="connection.ae.demo">
+                  servicePid="connection.hd.demo">
             </registration>
          </connection>
          <factory
