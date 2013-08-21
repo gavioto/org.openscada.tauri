@@ -6,13 +6,28 @@
       <viewInstance
             defaultInstance="true"
             factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
-            id="org.openscada.tauri.ostest2.client.default"
+            id="org.openscada.tauri.ostest2.client.placeholder"
             mainView="false"
             name="Main"
-            resource="resources/views/placeholder.vi">
+            resource="resources/views/placeholder.vi"
+            zooming="false">
          <visibility>
             <reference
                   definitionId="org.openscada.tauri.ostest2.client.noSession">
+            </reference>
+         </visibility>
+      </viewInstance>
+ 	<viewInstance
+        defaultInstance="true"
+        factoryClass="org.openscada.vi.ui.user.VisualInterfaceFactory"
+        id="org.openscada.tauri.ostest2.client.main"
+        mainView="true"
+        name="Main"
+        resource="resources/views/main.vi"
+        zooming="false">
+         <visibility>
+            <reference
+                  definitionId="org.openscada.tauri.ostest2.client.hasSession">
             </reference>
          </visibility>
       </viewInstance>
