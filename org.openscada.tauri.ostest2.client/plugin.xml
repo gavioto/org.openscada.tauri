@@ -58,6 +58,15 @@
                   servicePid="connection.da.demo">
             </registration>
          </connection>
+ 		<connection
+               authUseCallbacks="true"
+               autoReconnectDelay="10000"
+               mode="NORMAL"
+               uri="ae:ngp://demo.openscada.org:2201">
+            <registration
+                  servicePid="connection.ae.demo">
+            </registration>
+         </connection>
          <factory
                class="org.openscada.core.ui.connection.login.factory.ConnectionLoginFactory">
          </factory>
