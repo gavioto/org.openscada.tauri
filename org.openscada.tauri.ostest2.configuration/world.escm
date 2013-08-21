@@ -3,11 +3,11 @@
   <levels xmi:id="_58AxkAlrEeOc1J5f_UAm1w" name="OS">
     <levels xmi:id="_7A6kIAlrEeOc1J5f_UAm1w" name="DEMO">
       <levels xmi:id="_8jLoIAlrEeOc1J5f_UAm1w" name="SYS">
-        <components xsi:type="exec:LoadAverage" xmi:id="_rn_SVQlrEeOc1J5f_UAm1w">
+        <components xsi:type="exec:LoadAverage" xmi:id="_rn_SVQlrEeOc1J5f_UAm1w" name="LAVG">
           <masterOn href="world.esim#_sgH70AjJEeOc1J5f_UAm1w"/>
           <runsOn href="world.esim#_sgGtsQjJEeOc1J5f_UAm1w"/>
         </components>
-        <components xsi:type="exec:SystemInformationVMStat" xmi:id="_d1QVoApEEeOzeY6P0K3mpQ">
+        <components xsi:type="exec:SystemInformationVMStat" xmi:id="_d1QVoApEEeOzeY6P0K3mpQ" name="VMSTAT">
           <masterOn href="world.esim#_sgH70AjJEeOc1J5f_UAm1w"/>
           <runsOn href="world.esim#_sgGtsQjJEeOc1J5f_UAm1w"/>
         </components>
