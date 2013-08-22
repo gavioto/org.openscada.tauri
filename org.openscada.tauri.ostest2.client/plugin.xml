@@ -168,7 +168,7 @@
                authUseCallbacks="true"
                autoReconnectDelay="10000"
                mode="OPTIONAL"
-               uri="hd:ngp://demo.openscada.org:2301">
+               uri="hd:ngp://demo.openscada.org:2302">
             <registration
                   servicePid="connection.hd.demo">
             </registration>

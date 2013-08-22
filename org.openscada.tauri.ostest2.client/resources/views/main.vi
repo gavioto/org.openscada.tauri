@@ -11,4 +11,5 @@
     </children>
   </root>
   <properties key="connection" value="connection.da.demo"/>
+  <properties key="hdConnection" value="connection.hd.demo"/>
 </visualInterface:Symbol>

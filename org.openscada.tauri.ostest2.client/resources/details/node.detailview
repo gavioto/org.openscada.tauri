@@ -38,21 +38,30 @@
             xsi:type="detailView:TextComponent"
             format="User (%)"
             decimal="0"
+            hdConnectionId="$hdConnection$"
+            hdItemId="$prefix$.CPU.USER.V"
+            hdQueryString=""
             descriptor="$connection$#$prefix$.CPU.USER.V"/>
         <components
             xsi:type="detailView:TextComponent"
             format="System (%)"
             decimal="0"
+            hdConnectionId="$hdConnection$"
+            hdItemId="$prefix$.CPU.SYS.V"
             descriptor="$connection$#$prefix$.CPU.SYS.V"/>
         <components
             xsi:type="detailView:TextComponent"
             format="Wait (%)"
             decimal="0"
+            hdConnectionId="$hdConnection$"
+            hdItemId="$prefix$.CPU.WAIT.V"
             descriptor="$connection$#$prefix$.CPU.WAIT.V"/>
         <components
             xsi:type="detailView:TextComponent"
             format="Idle (%)"
             decimal="0"
+            hdConnectionId="$hdConnection$"
+            hdItemId="$prefix$.CPU.IDLE.V"
             descriptor="$connection$#$prefix$.CPU.IDLE.V"/>
       </groups>
       <groups
@@ -83,10 +92,15 @@
         <components
             xsi:type="detailView:TextComponent"
             format="Context Switches (/s)"
+            hdConnectionId="$hdConnection$"
+            hdItemId="$prefix$.SYS.CS.V"
+            hdQueryString="2400000:600000:0:50000"
             descriptor="$connection$#$prefix$.SYS.CS.V"/>
         <components
             xsi:type="detailView:TextComponent"
             format="Interrupts (/s)"
+            hdConnectionId="$hdConnection$"
+            hdItemId="$prefix$.SYS.INT.V"
             descriptor="$connection$#$prefix$.SYS.INT.V"/>
       </groups>
     </component>
