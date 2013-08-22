@@ -15,6 +15,8 @@ Require-Bundle: org.eclipse.ui,
  org.openscada.da.ui.connection.creator.ngp;bundle-version="1.0.0",
  org.openscada.hd.ui.connection.creator.ngp;bundle-version="1.0.0",
  org.openscada.vi.ui.viewer.ext;bundle-version="1.0.0",
- org.openscada.ae.ui.views;bundle-version="1.1.0"
+ org.openscada.ae.ui.views;bundle-version="1.1.0",
+ org.openscada.vi.details,
+ org.openscada.vi.details.swt;bundle-version="1.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy

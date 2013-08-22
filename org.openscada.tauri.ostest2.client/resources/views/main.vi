@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <visualInterface:Symbol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualInterface="urn:openscada:visualInterface" backgroundColor="#FFFFFF">
-  <root xsi:type="visualInterface:GridContainer" columns="3" marginWidth="20" marginHeight="20">
-    <children horizontalAlignment="CENTER" verticalAlignment="CENTER" grabHorizontalSpace="true" grabVerticalSpace="true" spanCols="3">
-      <element xsi:type="visualInterface:Image" uri="platform:/plugin/org.openscada.tauri.ostest2.client/resources/images/ibh-logo.png"/>
-    </children>
-    <children horizontalAlignment="END" verticalAlignment="END" spanCols="3">
-      <element xsi:type="visualInterface:Image" uri="platform:/plugin/org.openscada.tauri.ostest2.client/resources/images/ibh-s_mini_48.png"/>
+  <root xsi:type="visualInterface:XYContainer">
+    <children>
+      <element xsi:type="visualInterface:SymbolReference" uri="../symbols/node/node.vi">
+        <properties key="title" value="SRV001"/>
+        <properties key="prefix" value="OS.DEMO.SYS.SRV001"/>
+      </element>
+      <position x="10.0" y="10.0"/>
+      <dimension width="200.0" height="-1.0"/>
     </children>
   </root>
+  <properties key="connection" value="connection.da.demo"/>
 </visualInterface:Symbol>

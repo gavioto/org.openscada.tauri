@@ -150,7 +150,7 @@
                authUseCallbacks="true"
                autoReconnectDelay="10000"
                mode="NORMAL"
-               uri="da:ngp://demo.openscada.org:2101">
+               uri="da:ngp://demo.openscada.org:2101?session.privilege.operator=true&amp;session.privilege.admin=true&amp;session.privilege.developer=true">
             <registration
                   servicePid="connection.da.demo">
             </registration>
@@ -579,5 +579,18 @@
       </menuContribution>
 
    </extension>
+    <extension
+          point="org.openscada.vi.details.detailView">
+       <detailView
+             id="org.openscada.tauri.ostest2.client.details.node">
+          <class
+                class="org.openscada.vi.details.swt.impl.DetailViewImpl">
+             <parameter
+                   name="uri"
+                   value="platform:/plugin/org.openscada.tauri.ostest2.client/resources/details/node.detailview">
+             </parameter>
+          </class>
+       </detailView>
+    </extension>
 
 </plugin>
