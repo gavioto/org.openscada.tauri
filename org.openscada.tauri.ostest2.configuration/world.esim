@@ -25,8 +25,14 @@
     <monitorPools xmi:id="_sgK_IgjJEeOc1J5f_UAm1w" name="monitors.all" filter="(status=*)"/>
     <eventPools xmi:id="_sgK_IwjJEeOc1J5f_UAm1w" name="events.all" filter="(eventType=*)" size="10000"/>
     <defaultUserService xsi:type="infrastructure:SystemPropertyUserService" xmi:id="_sgLmMAjJEeOc1J5f_UAm1w">
-      <users xmi:id="_sgMNQAjJEeOc1J5f_UAm1w" name="admin" password="admin12"/>
-      <users xmi:id="_sgMNQQjJEeOc1J5f_UAm1w" name="interconnect" password="interconnect12"/>
+      <users xmi:id="_sgMNQAjJEeOc1J5f_UAm1w" name="admin" password="admin12">
+        <roles>DEVELOPER</roles>
+        <roles>OPERATOR</roles>
+        <roles>ADMIN</roles>
+      </users>
+      <users xmi:id="_sgMNQQjJEeOc1J5f_UAm1w" name="interconnect" password="interconnect12">
+        <roles>INTERLINK</roles>
+      </users>
     </defaultUserService>
   </options>
   <defaultSecurityConfiguration href="global/global.security#/"/>
