@@ -30,6 +30,7 @@
       <userService xsi:type="infrastructure:SystemPropertyUserService" xmi:id="_uZ19cBCTEeO7uJYlTkjX4Q">
         <users xmi:id="_wEzqcBCTEeO7uJYlTkjX4Q" name="driver" password="driver12"/>
       </userService>
+      <accessCredentials xsi:type="configuration:UsernamePasswordCredentials" xmi:id="_4iuTIBCtEeOgsLFhv-XzbA" username="driver" password="driver12"/>
     </drivers>
   </nodes>
   <options xmi:id="_sgJxAAjJEeOc1J5f_UAm1w">
