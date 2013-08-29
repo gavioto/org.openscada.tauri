@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="ASCII"?>
-<infrastructure:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://openscada.org/Configuration" xmlns:deployment="http://openscada.org/Configuration/Deployment" xmlns:infrastructure="http://openscada.org/Configuration/Infrastructure" xmlns:osgi="http://openscada.org/Configuration/OSGi" xmi:id="_sgGGoAjJEeOc1J5f_UAm1w">
-  <nodes xsi:type="infrastructure:SystemNode" xmi:id="_sgGtsAjJEeOc1J5f_UAm1w" hostName="demo.openscada.org">
+<infrastructure:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arduino="http://openscada.org/Configuration/Arduino" xmlns:configuration="http://openscada.org/Configuration" xmlns:deployment="http://openscada.org/Configuration/Deployment" xmlns:infrastructure="http://openscada.org/Configuration/Infrastructure" xmlns:osgi="http://openscada.org/Configuration/OSGi" xmi:id="_sgGGoAjJEeOc1J5f_UAm1w">
+  <nodes xsi:type="infrastructure:SystemNode" xmi:id="_sgGtsAjJEeOc1J5f_UAm1w" name="demo.openscada.org" hostName="demo.openscada.org">
     <deployment xsi:type="deployment:RedhatDeploymentMechanism" xmi:id="_kX7uoAl3EeOrEc-kkIlmxw">
       <changes xmi:id="_1iYBYAl3EeOSxItJEDIcmQ" date="2013-08-20T11:06:43.778+0200" description="Initial version" version="0.1.0">
         <author href="global/deployment.information.esdi#//@authors.0"/>
       </changes>
       <maintainer href="global/deployment.information.esdi#//@authors.0"/>
     </deployment>
-    <drivers xmi:id="_sgGtsQjJEeOc1J5f_UAm1w" name="exec" driverTypeId="org.openscada.da.server.exec" portNumber="2107"/>
+    <drivers xsi:type="infrastructure:CommonDriver" xmi:id="_sgGtsQjJEeOc1J5f_UAm1w" name="exec" driverTypeId="org.openscada.da.server.exec" portNumber="2107"/>
     <valueArchives xmi:id="_sgHUwAjJEeOc1J5f_UAm1w" name="hdserver" instanceNumber="2"/>
-    <masters xmi:id="_sgH70AjJEeOc1J5f_UAm1w" name="master" driver="_sgGtsQjJEeOc1J5f_UAm1w" archiveTo="_sgHUwAjJEeOc1J5f_UAm1w">
+    <masters xmi:id="_sgH70AjJEeOc1J5f_UAm1w" name="master" driver="_sgGtsQjJEeOc1J5f_UAm1w _nQLMEBCTEeO7uJYlTkjX4Q" archiveTo="_sgHUwAjJEeOc1J5f_UAm1w">
       <authoratives xmi:id="_sgIi4AjJEeOc1J5f_UAm1w">
         <hierarchy>OS</hierarchy>
         <hierarchy>DEMO</hierarchy>
       </authoratives>
     </masters>
+  </nodes>
+  <nodes xsi:type="infrastructure:ExternalNode" xmi:id="_Y7gEMA4wEeOCP7_7UefE2g" name="arduino1" hostName="172.20.11.105">
+    <devices xsi:type="arduino:ArduinoDevice" xmi:id="_y-RxAA_aEeOGPfYl5MDArg" name="A1" port="8888"/>
+  </nodes>
+  <nodes xsi:type="infrastructure:SystemNode" xmi:id="_2dY9QA8LEeOgneDxy50xXQ" name="internal1" hostName="ostest1.muc.ibhmgt.de">
+    <deployment xsi:type="deployment:DebianDeploymentMechanism" xmi:id="_weWkQA8REeOmt-ixQpK_yw">
+      <changes xmi:id="_RgSbgA8PEeOmt-ixQpK_yw" date="2013-08-27T13:53:43.778+0200" description="Initial version" version="0.1.0">
+        <author href="global/deployment.information.esdi#//@authors.0"/>
+      </changes>
+      <maintainer href="global/deployment.information.esdi#//@authors.0"/>
+    </deployment>
+    <drivers xsi:type="infrastructure:EquinoxDriver" xmi:id="_nQLMEBCTEeO7uJYlTkjX4Q" name="arduino" driverTypeId="org.openscada.da.server.arduino" devices="_y-RxAA_aEeOGPfYl5MDArg" instanceNumber="8">
+      <userService xsi:type="infrastructure:SystemPropertyUserService" xmi:id="_uZ19cBCTEeO7uJYlTkjX4Q">
+        <users xmi:id="_wEzqcBCTEeO7uJYlTkjX4Q" name="driver" password="driver12"/>
+      </userService>
+    </drivers>
   </nodes>
   <options xmi:id="_sgJxAAjJEeOc1J5f_UAm1w">
     <monitorPools xmi:id="_sgKYEAjJEeOc1J5f_UAm1w" name="monitors.unsafe" filter="(status=UNSAFE)"/>
