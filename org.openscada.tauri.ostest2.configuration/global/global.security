@@ -11,6 +11,7 @@
   <rules xsi:type="security:ScriptRule" id="allow.developer.session" actionFilter="PRIV" typeFilter="SESSION" script="//@scripts.4"/>
   <rules xsi:type="security:ScriptRule" id="reject.developer.session" actionFilter="PRIV" typeFilter="SESSION" script="//@scripts.1"/>
   <rules xsi:type="security:ScriptRule" id="reject.all.session" actionFilter="PRIV" typeFilter="SESSION" script="//@scripts.1"/>
+  <rules xsi:type="security:ScriptRule" id="allow.configuration" typeFilter="CFG" script="//@scripts.3"/>
   <rules xsi:type="security:ScriptRule" id="allow.all" script="//@scripts.5"/>
   <scripts xsi:type="security:GenericScript" source="(user == null) ? false : user.hasRole(&quot;INTERLINK&quot;);"/>
   <scripts xsi:type="security:GenericScript" source="false;"/>
