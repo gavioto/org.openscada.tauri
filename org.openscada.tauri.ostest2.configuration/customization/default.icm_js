@@ -23,6 +23,10 @@ if ( ( request.isAnalog () || request.isStringType () ) && request.hasTag ( "inp
 	request.addFeature ( DefaultFeatures.L(null) );
 	request.addFeature ( DefaultFeatures.LL(null) );
 	
+	// all analogs inputs may be scaled and rounded
+	request.addFeature ( DefaultFeatures.SCALE(null, null) );
+	request.addFeature ( DefaultFeatures.ROUND(null) );
+	
 	// all analog inputs end with "V = value"
 	request.getLocalTags().add ( "V" );
 
